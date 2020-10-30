@@ -1,4 +1,4 @@
- mkdir os2
+  @1 mkdir os2
  cd os2 
  git init 
  touch f1 
@@ -34,4 +34,14 @@
  
  if i dont merge new branch we use 
  git push -D :new
- 
+
+ @2
+ git tag  -a v1.4 -m "version 1.4"
+ git push origin 1.4 
+  
+  
+  to delete tag v1.4 remotely
+  git push origin --delete v1.4
+  
+  to delete tag v1.4 locally 
+  git push origin -d v1.4 
