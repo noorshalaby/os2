@@ -1,0 +1,8 @@
+ mkdir os2
+ cd os2 
+ git init 
+ touch f1 
+ git add . 
+ git commit -m "create f1"
+ git remote add origin "https://github.com/noorshalaby/os2"
+ git push origin master 
