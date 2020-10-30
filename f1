@@ -6,3 +6,32 @@
  git commit -m "create f1"
  git remote add origin "https://github.com/noorshalaby/os2"
  git push origin master 
+ git branch
+ git branch new
+ git checkout new
+ touch f2,f3,f4,f5
+ git add .
+ git commit -m "create f2 f3 f4 f5 "
+ git push origin new 
+ git branch ops
+ git checkout ops
+ touch f10,f11,f12
+ git add .
+ git commit -m "create f10 f11 f12"
+ git push origin ops 
+ git checkout master 
+ git merge new 
+ git merge ops 
+ git add . 
+ git commit -m "merge ops and new and write steps " 
+ git push origin master 
+ 
+ 
+ to delete  remote branch new
+ git push origin :new 
+ to delete branch new from local 
+ git branch -d :new 
+ 
+ if i dont merge new branch we use 
+ git push -D :new
+ 
